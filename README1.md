@@ -59,8 +59,8 @@ fairly useful for this issue.
 
 **4. How to use the script ?**
 
-The script ( link/to/the/script/) is used for analyzing the leaks. This
-is wrapped around by a shell script (link/to/wrapper/script) which will
+The stap script is used for analyzing the leaks. This
+is wrapped around by a shell script which will
 ask user for certain information and then run the stap script for doing
 its task.
 
@@ -173,7 +173,7 @@ Pass 5: starting run.
 
 The five passe flow can be understand easily by the following :
 
-![](media/image2.png){width="3.5989588801399823in"
+![alt text](https://github.com/SonaArora/ref-leak-identify-in-glusterfs/blob/ref-leak/images/systemtap-processing-steps.png){width="3.5989588801399823in"
 height="3.3933038057742784in"}
 
 The language is derived from dtrace and awk concepts. It describes an
@@ -237,6 +237,7 @@ event\_dispatch\_epoll\_worker+0x2af \[libglusterfs.so.0.0.1\]
 
 0x7fc801ef85ca \[libpthread-2.23.so+0x75ca\]
 
+
 ptr : 7fc7e0003210
 
 dict\_ref+0xc \[libglusterfs.so.0.0.1\]
@@ -260,6 +261,7 @@ event\_dispatch\_epoll\_handler+0x233 \[libglusterfs.so.0.0.1\]
 event\_dispatch\_epoll\_worker+0x2af \[libglusterfs.so.0.0.1\]
 
 0x7fc801ef85ca \[libpthread-2.23.so+0x75ca\]
+
 
 ptr : 7fc7e0003210
 
@@ -286,6 +288,8 @@ event\_dispatch\_epoll\_worker+0x2af \[libglusterfs.so.0.0.1\]
 0x7fc801ef85ca \[libpthread-2.23.so+0x75ca\]
 
 ------
+
+Unref Traces:
 
 ptr : 7fc7e0003210
 
