@@ -171,7 +171,7 @@ Pass 5: starting run.
 
 **4.2 What are these Five passes?**
 
-The five passe flow can be understand easily by the following :
+The five passes flow can be understand easily by the following :
 
 ![alt text](https://github.com/SonaArora/ref-leak-identify-in-glusterfs/blob/ref-leak/images/systemtap-processing-steps.png){width="3.5989588801399823in"
 height="3.3933038057742784in"}
